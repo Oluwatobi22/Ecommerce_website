@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap5/css/bootstrap.css">
+    <title>SIGN-IN</title>
+    <style>
+        .widt {
+            border-radius: 20px;
+        }
+
+        .bos {
+            /* box-shadow: 0 0 9px 2px black; */
+            border-radius: 10px;
+            padding: 5px 0;
+        }
+
+        .nn {
+            border: 1px solid black;
+            margin: 12px 0;
+            height: 12px;
+            border: none;
+        }
+
+        .wid {
+            width: 65%;
+            border-radius: 20px;
+            margin-left: 350px;
+        }
+
+        .for {
+            text-decoration: none;
+            color: rgb(25, 25, 87);
+            padding-left: 200px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .widt {
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            .wid {
+                width: 70%;
+                border-radius: 20px;
+                margin-left: 50px;
+            }
+
+            .for {
+                text-decoration: none;
+                color: rgb(25, 25, 87);
+                padding-left: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-dark">
+    <div class="container py-5">
+        <div class="" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content widt">
+                    <div class="modal-body">
+                        <div class="container px-2 bos">
+                            <h2 class="text-center" style="color: rgb(25, 25, 87);"><i>SIGN-IN</i></h2>
+                            <div>
+                                <input type="text" id="email" class="form-control border rounded my-4" placeholder="Your Email address"><small id="e1"></small>
+                                <input type="text" id="pwd" class="form-control border rounded my-3" placeholder="Your password"><small id="e2"></small>
+                                <div class="py-2" style="color: rgb(25, 25, 87);">
+                                    <input type="checkbox">Remember me
+                                    <!-- <a href="#" onclick="" class="for"><span type="button" data-bs-toggle="modal" data-bs-target="#examModal">Forget password?</span></a> -->
+                                </div>
+                                <center class="pt-3">
+                                    <button type="submit" class="btn btn-primary col-5" onclick="login()">SIGN-IN</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function login() {
+            tobi = JSON.parse(localStorage.getItem("project"));
+            if (email.value != "" && pwd.value != "") {
+                for(const a of tobi){
+                    if (a["Email"] == email.value && a["Password"] == pwd.value) {
+                        localStorage.Eail = JSON.stringify(email.value);
+                        location.assign("raph.html");
+                    }else{
+                        e1.innerHTML = "Enter the correct email"
+                        e1.style.color = "red";
+                        e2.innerHTML = "Enter the correct password"
+                        e2.style.color = "red";
+                    }
+                }
+                console.log(a)
+            }else{
+                e1.innerHTML = "Enter your email"
+                e1.style.color = "red";
+                e2.innerHTML = "Enter your password"
+                e2.style.color = "red";
+            }
+            email.value = "";
+            pwd.value = "";
+        }
+    </script>
+    <script src="./bootstrap5/js/bootstrap.js"></script>
+</body>
+
+</html>

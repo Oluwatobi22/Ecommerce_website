@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SIGN UP PAGE</title>
+    <style>
+        .form-control {
+            box-shadow: 0 0 9px 2px rgb(100, 100, 100, 0.30);
+            margin-top: 9px;
+        }
+
+        .moback {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 120vh;
+            height: 87vh !important;
+            pointer-events: auto;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 1.9rem;
+            outline: 0;
+        }
+
+        @media screen and (max-width:414px) {
+            .nice {
+                height: 38vh !important;
+                margin-top: -93px !important;
+
+            }
+
+            .nn {
+                margin-top: 34px;
+            }
+
+        }
+
+        .ss {
+            margin-bottom: 12px;
+        }
+
+        .modal-body {
+            margin-top: -65px;
+        }
+
+        .click {
+            background-color: white;
+            padding: 13px 19px;
+            margin-top: 34px !important;
+        }
+
+        .okay {
+            border-radius: 53px;
+        }
+
+        .dd {
+            border: 1px solid black;
+            height: 14px;
+            border: none;
+        }
+
+        .now {
+            background-color: black;
+        }
+
+        .nice {
+            padding-top: -29px !important;
+        }
+    </style>
+</head>
+
+<body class="now" onload="spec()">
+    <!-- Modal -->
+    <div class="container transparent mt-5 pb-5">
+        <div class="row justify-content-center nice ">
+            <div class="col-11 ">
+                <div class="row justify-content-center mt-5 ">
+                    <h1 class=" fw-bold text-center text-uppercase text-white mt-4" style="font-size:19px ;">
+                        Registration
+                        page</h1>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" value="" id="fname" placeholder="FirstName">
+                        <div class="dd">
+                            <small id="err1" class=""></small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" value="" id="lname" placeholder="LastName">
+                        <div class="dd">
+                            <small id="err2" class=""></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" value="" id="gen" placeholder="Gender">
+                        <div class="dd">
+                            <small id="err7"></small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" value="" id="email" placeholder="Email">
+                        <div class="dd">
+                            <small id="err4" class=""></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" value="" id="pwd" placeholder="Password">
+                        <div class="dd">
+                            <small id="err5" class=""></small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" value="" id="pass" placeholder="Phone-number">
+                        <div class="dd">
+                            <small id="err6" class=""></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" value="" id="add" placeholder="Address">
+                        <div class="dd">
+                            <small id="err3" class=""></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-12 text-center mt-2">
+                        <small class="text-white mx-2 fs-5 ss fst-italic">ALREADY SIGN IN<a
+                                class="fs-5 text-danger fst-italic ps-3" href="sign-in.html"
+                                class="text-danger">sign-in?</a></small>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-9 text-center mt-3">
+                        <span class="click "><a class="text-dark fs-5 fst-italic nn" href="#" onclick="show()">Sign up
+                                </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript">
+        var together = []
+        function spec() {
+            if (localStorage.project) {
+                together = JSON.parse(localStorage.project)
+            }
+
+        }
+        function show() {
+            if (fname.value == "" || lname.value == "" || add.value == "" || email.value == "" || pwd.value == "" || pass.value == "" || gen.value == "") {
+                var firstname = fname.value;
+                var regfname = /^[a-zA-z]{3,15}$/;
+                if (regfname.test(firstname) == false) {
+                    err1.innerText = "Enter the value of  firstname";
+                    err1.style.color = "red";
+                }
+                else {
+                    console.log(regfname.test(firstname));
+                }
+
+                var lastname = lname.value;
+                var reglname = /^([a-zA-z]{3,15})$/;
+                if (reglname.test(lastname) == false) {
+                    err2.innerText = "Enter the value of  lastname";
+                    err2.style.color = "red";
+                }
+                else {
+                    console.log(reglname.test(lastname));
+                }
+
+                var address = add.value;
+                var regadd = /^[\w]+$/;
+                if (regadd.test(address) == false) {
+                    err3.innerText = "Enter the address";
+                    err3.style.color = "red";
+                }
+                else {
+                    console.log(regadd.test(address));
+                }
+
+                var Email = email.value;
+                var regemail = /^([\w]+)([@])([a-z]{3,7})([.])([a-z]{3,6})(([.][a-z]{2,5})?)$/;
+                if (regemail.test(Email) == false) {
+                    err4.innerText = "Enter your Email";
+                    err4.style.color = "red";
+                }
+                else {
+                    console.log(regemail.test(Email));
+                }
+                var password = pwd.value;
+                var regpass = /^([\w]{3,15})([&]?)([@]?)$/;
+                if (regpass.test(password) == false) {
+                    err5.innerText = "Enter the password";
+                    err5.style.color = "red";
+                }
+                else {
+                    console.log(regpass.test(password));
+                }
+
+                var PhoneNumber = pass.value;
+                var regphon = /^([\d]){11}$/;
+                if (regphon.test(PhoneNumber) == false) {
+                    err6.innerText = "Enter the value of phoneNumber";
+                    err6.style.color = "red";
+                }
+                else {
+                    console.log(regphon.test(PhoneNumber));
+                }
+                var Gender = gen.value;
+                var reggen = /^([w]){9}$/;
+                if (reggen.test(Gender) == false) {
+                    err7.innerText = "Enter the value of Gender";
+                    err7.style.color = "red";
+                }
+                else {
+                    console.log(reggen.test(Gender));
+                }
+            }
+            else {
+                var rush = {
+                    ffname: fname.value,
+                    LstName: lname.value,
+                    Address: add.value,
+                    Email: email.value,
+
+                    Password: pwd.value,
+                    PhoneNumber: pass.value,
+                    Gender: gen.value,
+                    contact: [],
+                    note: [],
+                    event: []
+                }
+                together.push(rush)
+                localStorage.project = JSON.stringify(together)
+                console.log(together)
+                location.assign("sign-in.html")
+            }
+        }  
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap5/js/bootstrap.js"></script>
+</body>
+
+</html>

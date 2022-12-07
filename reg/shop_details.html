@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Details</title>
+    <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="splide-4.0.7/splide-4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet" href="styleshop.css">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <style>
+        .tt:hover {
+            border: none;
+        }
+
+        .social a {
+            padding: 0px 12px;
+            font-size: 23px;
+        }
+        body {
+    margin: 0px;
+    padding: 0px;
+
+}
+.nice {
+    border-right: 2px solid black;
+}
+.now a{
+    font-size: 16px !important;
+    color:#252525;
+    text-decoration: none;
+    padding: 0px 12px;
+    font-weight: 400;  
+}
+@media screen and (max-width:414px) {
+    .or li {
+        display: inline-block;
+        font-size: 9px !important;
+    }
+}
+.obj li {
+    display: inline-block !important;
+    display: none;
+}
+.now a:hover{
+    color:#7fad39;
+}
+.ope li {
+    list-style-type: none;
+    display: inline-block;
+}
+.media li {
+    display: inline-block;
+    padding: 12px 9px;
+    font-size: 23px;
+   
+}
+.media li:hover {
+    background-color:black;
+    border-radius: 30px;
+    padding: 2px 12px;
+} 
+.or li {
+    display: inline-block;
+    padding: 0px 12px;
+}
+.kk li {
+    padding: 0px 12px;
+}
+.kk a {
+    font-size: 24px;
+}
+.card {
+    border: none;
+}
+.footer {
+    background-color:#f2f3f4; 
+    background-size: cover;
+    padding: 89px 0px;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand mx-5" href="#"><img src="./image/logo.png" class="img-responsive img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto now">
+                    <a href="index.html" class="active" style="color: #7fad39;">Home</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="icon mx-3">
+                <ul>
+                    <li class="fa fa-heart"></li>
+                    <span>1</span>
+                    <li class="fa  fa-shopping-bag"></li>
+                    <span>3</span>
+                </ul>
+            </div>
+            <div>
+                <p>item:
+                    <span>$150.00</span>
+                </p>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="dropdown">
+                    <div data-bs-toggle="dropdown" aria-expanded="false"
+                        style="background-color: #7fad39; cursor:pointer; padding: 14px 0px; color: white;">
+                        <i class="fa fa-bars mx-3"></i>All departments
+                    </div>
+                    <ul class="dropdown-menu dropdown-menu-light kk">
+                        <li><a class="dropdown-item" href="#">Fresh Meat</a></li>
+                        <li><a class="dropdown-item" href="#">Vegetables</a></li>
+                        <li><a class="dropdown-item" href="#">Fruit & Nut Gifts</a></li>
+                        <li><a class="dropdown-item" href="#">Fresh Berries</a></li>
+                        <li><a class="dropdown-item" href="#">Ocean Foods</a></li>
+                        <li><a class="dropdown-item" href="#">Butter & Eggs</a></li>
+                        <li><a class="dropdown-item" href="#">Fastfood</a></li>
+                        <li><a class="dropdown-item" href="#">Fresh Onion</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" placeholder="What do you need?" required
+                            style="padding: 9px 34px; border: 1px solid gainsboro;" class=" mt-3 mb-4">
+                        <a href="#" class="mt-2"
+                            style="background-color:#7fad39; color: white; text-decoration: none; padding: 9px 25px;">SEARCH</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="float-start">
+                            <i class="fa fa-phone mx-4" style="color:#7fad39;"></i>
+                        </div>
+                        <h2 style="color:#1c1c1c" class="fs-3 mt-3">+2347032437182</h2>
+                        <span class="mx-5" style="color: #6f6f6f;">support 24/7 time</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section"
+        style="background-image:url(./image/breadcrumb.jpg); background-size:cover; background-repeat: no-repeat; height: auto;">
+        <div class="container">
+            <div class="row justify-content-center pt-5">
+                <div class="col-md-12 text-center">
+                    <h3 class="text-white" style="font-size: 73px;">Vegetable’s Package</h3>
+                    <a href="index.html" class="text-white text-decoration-none fs-5">Home --- Vegetable’s -- </a><span
+                        class="text-white">Vegetables Package</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container mt-5">
+        <div class="row" style="padding-top: 56px;">
+            <div class="col-md-6">
+                <img src="./image/featured/feature-3.jpg" alt="vegetable" class="img-responsive img-fluid w-100">
+            </div>
+            <div class="col-md-6" class="w-100">
+                <h3>Vetgetable’s Package</h3>
+                <div class="d-flex px-2" style="color:rgb(113, 113, 24);">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <span class="text-danger">(18 reviews)</span>
+                <div>
+                    $50.00
+                </div>
+                <p
+                    style="color: #6f6f6f; font-size: 16px; font-weight:400; font-family:'Cairo', sans-serif;line-height: 29px;">
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
+                    vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet quam
+                    vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
+                <div class="my-5">
+                    <div class="my-4" style="background-color: #f5f5f5; margin-bottom: 5px; display: inline-block;">
+                        <span style="color:#6f6f6f; width: 35px; cursor: pointer;" onclick="cart('-')">-</span>
+                        <input type="text" value="1" id="ch" class="border-0 tt">
+                        <span style="color:#6f6f6f; width: 15px; cursor: pointer;" onclick="cart('+')">+</span>
+                        <a class="primary-btn mx-5" href="#"
+                            style="background-color:#7fad39; padding:13px 12px; text-decoration: none; color: white;">ADD
+                            TO CARD</a>
+                        <a><span><i class="icon_heart_alt"></i></span></a>
+                    </div>
+                    <span style="border: 2px solid black;">
+                        <hr>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul style="list-style-type:none;">
+                            <li class="float-start"><b>Availability</b> </li>
+                                <span style="display: inline-block; position: relative; left: 45px;">In Stock</span>
+                          
+                            <li><b>Shipping</b>
+                                <span style="display: inline-block; position: relative; left: 45px;">01 day shipping.</span>
+                                <small  style="position: relative; left: 45px;"><a href="#" class="text-danger" >Free pickup today</a></small>
+                            </li>
+                            <li><b>Weight</b>
+                                <span style="display: inline-block; position: relative; left: 45px;" >0.5 kg</span>
+                            </li>
+                            <li class="float-start" style="font-size: 16px;">
+                                <b>Share on</b>
+                                <div class=" social" style="display: inline-block;position: relative; left: 45px;">
+                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-instagram"></i></a>
+                                    <a href=""><i class="fa fa-pinterest"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h3 style="color: black;">Featured Product</h3>
+            </div>
+            <span style="border-bottom: 6px solid #7fad39; margin-bottom: 23px; width: 53px;"></span>
+        </div>
+    </div>
+    <div class="container" id="oranges">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card border border-0" style="width: 18rem;">
+                    <img src="./image/featured/feature-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-center">Crab Pool Security.</p>
+                      <h5 class="card-title text-center">#150.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border border-0" style="width: 18rem;">
+                    <img src="./image/featured/mango.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">mango</h5>
+                      <p class="card-text text-center">#500.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border border-0" style="width: 18rem;">
+                    <img src="./image/featured/feature-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-center"></p>
+                      <h5 class="card-title text-center">#300.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card border border-0" style="width: 18rem;">
+                    <img src="./image/featured/pine.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text text-center">pineapple</p>
+                      <h5 class="card-title text-center">#700.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 mt-2">
+                    <img src="./image/logo.png" alt="logo" class="img-reponsive ms-4 img-fluid">
+                    <ul class="text-white " style="list-style-type: none;">
+                        <li class="py-2 text-dark">Address: 60-49<br> Road 11378 New York</li>
+                        <li class="py-3 text-dark">Phone: +65 11.188.888</li>
+                        <li class="text-dark">Email: hello@colorlib.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 mt-4">
+                    <h4 class="ms-4">Useful Links</h4>
+                    <ul style="list-style-type:none;">
+                        <li>About Us</li>
+                        <li>About Our Shop</li>
+                        <li>Secure Shopping</li>
+                        <li>Delivery infomation</li>
+                        <li>Privacy Policy</li>
+                        <li>Our Sitemap</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 mt-5">
+                    <ul style="list-style-type:none">
+                        <li>Who We Are</li>
+                        <li>Our Services</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                        <li>Innovation</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <h3>Join Our Newsletter Now</h3>
+                    <p>Get E-mail updates about our latest shop and special offers.</p>
+                    <input type="text" style="background-color:white; border: 1px solid gainsboro;" class="py-2" placeholder="Enter the email">
+                    <a class="text-white" href="#" style="background-color: rgb(0, 119, 255); padding: 10px 23px;text-decoration:none; font-size: 15px;">Subcribe</a>
+                    <ul style="list-style-type:none" class="media">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>Copyright ©2022 All rights reserved | This template is made with <i class="fa fa-heart"></i> by <a href="#" class="text-decoration-none">Colorlib</a></p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./image/payment-item.png" class="img-reponsive img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        const cart = (sub,add) => {
+            var subt = sub
+            var plus = add
+            const click = ch.value;
+            if (ch.value == 1) {
+                subt--
+                plus++
+
+
+            }
+
+        } 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap5/js/bootstrap.js"></script>
+</body>
+
+</html>
