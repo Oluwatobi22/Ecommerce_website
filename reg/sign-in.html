@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap5/css/bootstrap.css">
     <title>SIGN-IN</title>
     <style>
-        .widt {
+        .width {
             border-radius: 20px;
         }
 
@@ -67,14 +67,17 @@
                         <div class="container px-2 bos">
                             <h2 class="text-center" style="color: rgb(25, 25, 87);"><i>SIGN-IN</i></h2>
                             <div>
-                                <input type="text" id="email" class="form-control border rounded my-4" placeholder="Your Email address"><small id="e1"></small>
-                                <input type="text" id="pwd" class="form-control border rounded my-3" placeholder="Your password"><small id="e2"></small>
+                                <input type="text" id="email" class="form-control border rounded my-4"
+                                    placeholder="Your Email address"><small id="e1"></small>
+                                <input type="text" id="pwd" class="form-control border rounded my-3"
+                                    placeholder="Your password"><small id="e2"></small>
                                 <div class="py-2" style="color: rgb(25, 25, 87);">
                                     <input type="checkbox">Remember me
                                     <!-- <a href="#" onclick="" class="for"><span type="button" data-bs-toggle="modal" data-bs-target="#examModal">Forget password?</span></a> -->
                                 </div>
                                 <center class="pt-3">
-                                    <button type="submit" class="btn btn-primary col-5" onclick="login()">SIGN-IN</button>
+                                    <button type="submit" class="btn btn-primary col-5"
+                                        onclick="login()">SIGN-IN</button>
                                 </center>
                             </div>
                         </div>
@@ -87,11 +90,11 @@
         function login() {
             tobi = JSON.parse(localStorage.getItem("project"));
             if (email.value != "" && pwd.value != "") {
-                for(const a of tobi){
+                for (const a of tobi) {
                     if (a["Email"] == email.value && a["Password"] == pwd.value) {
                         localStorage.Eail = JSON.stringify(email.value);
                         location.assign("raph.html");
-                    }else{
+                    } else {
                         e1.innerHTML = "Enter the correct email"
                         e1.style.color = "red";
                         e2.innerHTML = "Enter the correct password"
@@ -99,7 +102,7 @@
                     }
                 }
                 console.log(a)
-            }else{
+            } else {
                 e1.innerHTML = "Enter your email"
                 e1.style.color = "red";
                 e2.innerHTML = "Enter your password"
@@ -109,7 +112,7 @@
             pwd.value = "";
         }
     </script>
-    <script src="./bootstrap5/js/bootstrap.js"></script>
+    <script src="../bootstrap5/js/bootstrap.js"></script>
 </body>
 
 </html>

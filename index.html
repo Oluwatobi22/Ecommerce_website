@@ -6,17 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce website</title>
-    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
-    <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./bootstrap5/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.css">
     <link rel="stylesheet" href="splide-4.0.7/splide-4.0.7/dist/css/splide.min.css">
-    <link rel="stylesheet" href="styleEcomm.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./styleEcomm.css">
     <style>
         .list {
             list-style-type: none;
@@ -63,14 +56,18 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto now">
                     <a href="#" class="active" style="color: #7fad39;">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Blog</a>
-                    <a href="contact.html">Contact</a>
+                    <div class="dropdown ">
+                        <button class="dropbtn">pages</button>
+                        <div class="dropdown-content">
+                            <a href="./reg/shop_details.html">Shopdetails</a>
+                            <a href="./reg/chart.html">ShopCart</a>
+                            <a href="#">Checkout</a>
+                        </div>
+                    </div>
+                    <a href="./contact/contact.html">Contact</a>
                     <a href="./reg/index.html">Register</a>
+                    <div id="uploadImage"></div>
                 </div>
-                <a href="./contact/contact.html">Contact</a>
-                <a href="./reg/index.html">Register</a>
-                <div id="uploadImage"></div>
             </div>
         </div>
         <div class="icon mx-3">
@@ -315,7 +312,7 @@
                     <img src="./image/payment-item.png" class="img-reponsive img-fluid">
                 </div>
             </div>
-            <<<<<<< HEAD </div>
+        </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
@@ -411,7 +408,7 @@
         }
         function orange() {
             document.getElementById("space").innerHTML = `<div class="container" id="oranges">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-1.jpg" class="card-img-top" alt="...">
@@ -453,7 +450,7 @@
         }
         function fmeat() {
             document.getElementById("space").innerHTML = `<div class="container" id="meat">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-1.jpg" class="card-img-top" alt="...">
@@ -495,7 +492,7 @@
         }
         function veg() {
             document.getElementById("space").innerHTML = `<div class="container" id="vege">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-3">
                     <div class="card border border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-1.jpg" class="card-img-top" alt="...">
@@ -537,7 +534,7 @@
         }
         function food() {
             document.getElementById("space").innerHTML = ` <div class="container" id="ff">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-3">
                     <div class="card border  border-0" style="width: 18rem;">
                         <img src="./image/featured/feature-2.jpg" class="card-img-top" alt="...">
@@ -579,6 +576,13 @@
         }
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap5/js/bootstrap.js"></script>
 </body>
 
 </html>
